@@ -1,0 +1,27 @@
+{
+  "name": "nodejscodersx",
+  "version": "1.0.0",
+  "description": "Tutorial Project for Express NodeJS",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon server.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vdt040499/NodeJSCodersX.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/vdt040499/NodeJSCodersX/issues"
+  },
+  "homepage": "https://github.com/vdt040499/NodeJSCodersX#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "pug": "^2.0.4"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.3"
+  }
+}
