@@ -1,16 +1,16 @@
-var users = [
-    {name: 'Minh Thông'},
-    {name: 'Võ Tân'}
-]
+const db = require('../lowdb');
 
 module.exports.index = (req, res) => {
     res.render('users/index', {
-        users: users
+        users: db.get('users').value()
     });
 }
 
 module.exports.search = (req, res) => {
     var q = req.query.q.toLowerCase();
+
+    var users = db.get('users').value();
+
     var matchedUsers = users.filter(user => {
         return user.name.toLowerCase().indexOf(q) !== -1;
     })
@@ -26,7 +26,6 @@ module.exports.create = (req, res) => {
 }
 
 module.exports.createpost = (req, res) => {
-    users.push(req.body);
-
+    db.get('users').push(req.body).write();
     res.redirect('/users');
 }
