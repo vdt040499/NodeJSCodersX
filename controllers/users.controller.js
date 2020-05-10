@@ -20,3 +20,13 @@ module.exports.search = (req, res) => {
         q: q
     })
 }
+
+module.exports.create = (req, res) => {
+    res.render('users/create');
+}
+
+module.exports.createpost = (req, res) => {
+    users.push(req.body);
+
+    res.redirect('/users');
+}

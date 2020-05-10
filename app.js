@@ -8,6 +8,8 @@ const userRoutes = require('./routes/users.route');
 //Middleware
 app.set('view engine', 'pug');
 app.set('views', './views');
+app.use(express.json());
+app.use(express.urlencoded({ extended: true }));
 
 //Routes
 app.use('/', indexRoutes);
