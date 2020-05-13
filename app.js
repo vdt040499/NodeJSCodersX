@@ -6,6 +6,7 @@ const cookieParser = require('cookie-parser');
 const indexRoutes = require('./routes/index.route');
 const userRoutes = require('./routes/users.route');
 const authRoutes = require('./routes/auth.route');
+const productRoutes = require('./routes/product.route');
 const authMiddleware =  require('./middleware/auth.middleware');
 
 //Middleware
@@ -20,6 +21,7 @@ app.use('/public', express.static('public'));
 app.use('/', indexRoutes);
 app.use('/users', authMiddleware.requireAuth, userRoutes);
 app.use('/auth', authRoutes);
+app.use('/products', productRoutes);
 
 //Export module
 module.exports = app;
