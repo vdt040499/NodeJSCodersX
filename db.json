@@ -1,20 +1,11 @@
 {
   "users": [
     {
-      "name": "Duy Tân",
-      "id": "fgfR-_WIq"
-    },
-    {
-      "name": "Võ Tân",
-      "phone": "0123456789",
-      "id": "si3yCRWTA",
+      "id": "t7LDTagKw",
       "email": "vdt040499@gmail.com",
-      "password": "123456"
-    },
-    {
-      "name": "Minh Thông",
-      "phone": "123123123",
-      "id": "a2m-kKuTz"
+      "name": "Võ Tân",
+      "phone": "01234567",
+      "password": "e10adc3949ba59abbe56e057f20f883e"
     }
   ]
 }
