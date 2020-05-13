@@ -10,6 +10,7 @@ app.set('view engine', 'pug');
 app.set('views', './views');
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
+app.use('/public', express.static('public'));
 
 //Routes
 app.use('/', indexRoutes);
