@@ -13,7 +13,7 @@ app.set('view engine', 'pug');
 app.set('views', './views');
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
-app.use(cookieParser());
+app.use(cookieParser(process.env.secret));
 app.use('/public', express.static('public'));
 
 //Routes
