@@ -610,5 +610,14 @@
       "image": "https://picsum.photos/200",
       "description": "et magnis dis parturient montes nascetur ridiculus mus etiam vel augue vestibulum rutrum rutrum neque aenean auctor gravida sem praesent"
     }
+  ],
+  "sessions": [
+    {
+      "id": "Hoobmbq3T",
+      "cart": {
+        "57d3b075-a22f-4071-970c-f381b4df4475": 2,
+        "c8c484f6-8fc3-4a26-86c7-475f819e6a2d": 1
+      }
+    }
   ]
 }
