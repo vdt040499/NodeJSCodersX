@@ -1,11 +1,12 @@
 {
   "users": [
     {
-      "id": "t7LDTagKw",
+      "id": "UgCHHhO89",
       "email": "vdt040499@gmail.com",
       "name": "Võ Tân",
-      "phone": "01234567",
-      "password": "e10adc3949ba59abbe56e057f20f883e"
+      "phone": "123456",
+      "password": "d70160939e9171bf07e4b350d7b26b7f",
+      "image": "public\\uploads\\avatar-1589618395836.jpg"
     }
   ],
   "products": [

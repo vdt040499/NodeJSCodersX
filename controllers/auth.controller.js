@@ -40,13 +40,13 @@ module.exports.signup = (req, res) => {
 }
 
 module.exports.postSignup = (req, res) => {
-    var hashedPassword = md5(req.body.password);
     var user = {
         id: shortId.generate(),
         email: req.body.email,
         name: req.body.name,
         phone: req.body.phone,
-        password: hashedPassword
+        password: md5(req.body.password),
+        image: req.file.path
     }
 
     db.get('users').push(user).write();

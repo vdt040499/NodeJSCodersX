@@ -3,7 +3,7 @@ extends ../layouts/common
 block content
     h1 Sign up
 
-    form(action="/auth/signup", method="POST")
+    form(action="/auth/signup", method="POST", enctype="multipart/form-data")
         .form-group
             label(for="email") Email
             input#email.form-control(name="email", type="text")
@@ -16,4 +16,7 @@ block content
         .form-group
             label(for="password") Password
             input#password.form-control(name="password", type="password")
+        .form-group
+            label(for="avatar") Avatar
+            input#avatar.form-control-file(name="avatar", type="file")
         button.btn.btn-primary Sign In

@@ -10,5 +10,4 @@ router.get('/create', userControllers.create);
 router.get('/:id', userControllers.getuser);
 router.post('/create',validate.postCreate, userControllers.createpost);
 
-
 module.exports = router;
