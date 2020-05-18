@@ -612,6 +612,29 @@
         "57d3b075-a22f-4071-970c-f381b4df4475": 2,
         "c8c484f6-8fc3-4a26-86c7-475f819e6a2d": 1
       }
+    },
+    {
+      "id": "IvDvXWtKw"
+    }
+  ],
+  "transfers": [
+    {
+      "id": "u8LPTKIlo",
+      "accountId": "17521022",
+      "amount": 300000,
+      "userId": "UgCHHhO89"
+    },
+    {
+      "id": "eekGtNTm2",
+      "accountId": "17521022",
+      "amount": 200000,
+      "userId": "UgCHHhO89"
+    },
+    {
+      "id": "B9sum-2IC",
+      "accountId": "17521022",
+      "amount": 300000,
+      "userId": "UgCHHhO89"
     }
   ]
 }
