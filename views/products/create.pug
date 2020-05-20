@@ -1,0 +1,17 @@
+extends ../layouts/common
+
+block content
+    h1 Create new product
+    form(action="/products/postcreate", method="POST", enctype="multipart/form-data")
+        input(type="hidden", name="_csrf", value="csrfToken")
+        .form-group
+            label(for="name") Name
+            input#name.form-control(name="name", type="text")
+        .form-group
+            label(for="description") Description
+            textarea#description.form-control(name="description", cols="30", rows="10")
+        .form-group
+            label(for='image') Image
+            input#image.form-control-file(name="image", type="file")
+
+        button.btn.btn-primary Create

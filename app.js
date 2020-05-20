@@ -3,6 +3,12 @@ const express = require('express');
 const app = express();
 const cookieParser = require('cookie-parser');
 const csurf = require('csurf'); 
+const mongoose = require('mongoose');
+
+//Connect to MongoDB
+mongoose.connect(process.env.MONGO_URL, () => {
+    console.log('Connect MongoDB successfully!');
+});
 
 const indexRoutes = require('./routes/index.route');
 const userRoutes = require('./routes/users.route');

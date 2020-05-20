@@ -1,7 +1,8 @@
 {
     "ignore": ["db.json"],
     "env": {
-        "secret": "tan123456"
+        "secret": "tan123456",
+        "MONGO_URL": "mongodb://localhost:27017/NodeJSCondersX"
     }
     
 }
